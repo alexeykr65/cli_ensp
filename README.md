@@ -2,6 +2,6 @@
 
 Скрипт подключается по умолчанию начиная с 2000 порта,
 
-![Alt text](img/screen1.png?raw=true "Title")
+<img width="400" alt="image" src="img/screen1.png">
 
 
