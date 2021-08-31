@@ -61,7 +61,7 @@ def write_result(pre_name_file, namehost, write_messsage, flagNewFile=True):
     # Write to file result
     year, month, day, hour, minute, sec = get_date()
     file_name_long = '_'.join([pre_name_file, namehost, year, month, day, hour, minute, sec + ".txt"])
-    file_name_short = '_'.join([pre_name_file, namehost + ".txt"])
+    file_name_short = '_'.join(["last", pre_name_file, namehost + ".txt"])
     for file_name in [file_name_long, file_name_short]:
         with open(f'{output_dir}/{file_name}', 'w') as id_config_file:
             id_config_file.write(write_messsage)
