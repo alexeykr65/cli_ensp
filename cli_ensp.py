@@ -73,7 +73,7 @@ def send_command(cmd, prompt=[b">", b"]"]):
     tn.read_very_eager()
     tn.write(cmd.encode('utf-8') + b"\n")
     # time.sleep(sleep_time)
-    index, m, data = tn.expect(prompt, timeout=5)
+    index, m, data = tn.expect(prompt, timeout=20)
     resp = data.decode("utf-8")
     if verbose:
         console.print(f'send_command: {cmd} return: {resp}')
